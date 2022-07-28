@@ -11,7 +11,7 @@ const getGifs = async (value) =>
     try {
       (async () => {
         const { data } = await axios.get(
-          `http://api.giphy.com/v1/gifs/search`,
+          `https://api.giphy.com/v1/gifs/search`,
           { params }
         );
         resolve(data);
